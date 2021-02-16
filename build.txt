@@ -1,0 +1,3 @@
+displayName = The Buff Sword
+author = SerFio
+version = 0.1
