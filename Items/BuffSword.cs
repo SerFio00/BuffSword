@@ -40,6 +40,7 @@ namespace Testspada.Items
 			recipeplatinum.AddIngredient(ItemID.Deathweed, 5);
 			recipeplatinum.AddIngredient(ItemID.Waterleaf, 5);
 			recipeplatinum.AddIngredient(ItemID.Fireblossom, 5);
+			recipeplatinum.AddIngredient(ItemID.Shiverthorn, 5);
 			recipeplatinum.AddTile(TileID.AlchemyTable);
 			recipeplatinum.AddTile(TileID.Bottles);
 			recipeplatinum.SetResult(this);
@@ -53,6 +54,7 @@ namespace Testspada.Items
 			recipegold.AddIngredient(ItemID.Deathweed, 5);
 			recipegold.AddIngredient(ItemID.Waterleaf, 5);
 			recipegold.AddIngredient(ItemID.Fireblossom, 5);
+			recipegold.AddIngredient(ItemID.Shiverthorn, 5);
 			recipegold.AddTile(TileID.AlchemyTable);
 			recipegold.AddTile(TileID.Bottles);
 			recipegold.SetResult(this);
