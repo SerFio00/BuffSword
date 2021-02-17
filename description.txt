@@ -1,1 +1,15 @@
-The Buff Sword is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+This mod add a new pre-hardmode powerful weapon: The Buff Sword
+
+this Sword has a strange feature: if you deal critical damage with this sword, you receive a random buff for 30 seconds (only potion buffs)
+
+The recipe of the Buff Sword is:
+-1 platinium/gold broadsword 
+-5 of every Vanilla flower (Blinkroot, Daybloom, Deathweed, Fireblossom, Moonglow, Shiverthorn, Waterleaf)
+
+can be crafted only on placed bottle or alchemy table
+
+enjoy my mod!
+
+v 0.1
+
+- Release
