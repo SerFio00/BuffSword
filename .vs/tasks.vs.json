@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "attività-BufferSword",
+      "appliesTo": "Items/BufferSword.cs",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "attività-BufferSword",
+      "appliesTo": "Items/BufferSword.cs",
+      "type": "launch"
+    }
+  ]
+}

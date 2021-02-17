@@ -18,8 +18,8 @@ namespace Testspada.Items
 			item.damage = 16;
 			item.crit = 5;
 			item.melee = true;
-			item.width = 150;
-			item.height = 150;
+			item.width = 50;
+			item.height = 50;
 			item.useTime = 25;
 			item.useAnimation = 15;
 			item.useStyle = 1;
@@ -61,7 +61,7 @@ namespace Testspada.Items
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
         {
-			int[] Potenziamento = { BuffID.AmmoReservation, BuffID.Archery, BuffID.Battle, BuffID.Builder, BuffID.Endurance, BuffID.Flipper, BuffID.Gills, BuffID.Gravitation, BuffID.Heartreach, BuffID.Hunter, BuffID.Inferno, BuffID.Invisibility, BuffID.Ironskin, BuffID.Lifeforce, BuffID.MagicPower, BuffID.ManaRegeneration, BuffID.Mining, BuffID.NightOwl, BuffID.ObsidianSkin, BuffID.Panic, BuffID.Rage, BuffID.RapidHealing, BuffID.Regeneration, BuffID.Shine, BuffID.Sonar, BuffID.Spelunker, BuffID.Swiftness, BuffID.Thorns, BuffID.Titan, BuffID.Warmth, BuffID.WaterWalking, BuffID.WellFed, BuffID.Wrath };
+			int[] Potenziamento = { BuffID.AmmoReservation, BuffID.Archery, BuffID.Battle, BuffID.Builder, BuffID.Endurance, BuffID.Flipper, BuffID.Gills, BuffID.Gravitation, BuffID.Heartreach, BuffID.Hunter, BuffID.Inferno, BuffID.Invisibility, BuffID.Ironskin, BuffID.Lifeforce, BuffID.MagicPower, BuffID.ManaRegeneration, BuffID.Mining, BuffID.NightOwl, BuffID.ObsidianSkin, BuffID.Panic, BuffID.Rage, BuffID.RapidHealing, BuffID.Regeneration, BuffID.Shine, BuffID.Sonar, BuffID.Spelunker, BuffID.Swiftness, BuffID.Thorns, BuffID.Titan, BuffID.Warmth, BuffID.WaterWalking, BuffID.WellFed, BuffID.Wrath, BuffID.Summoning };
             int Lunghezza = Potenziamento.Length;
 			Random rnd = new Random();
             if (crit)
