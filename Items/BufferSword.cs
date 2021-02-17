@@ -22,10 +22,10 @@ namespace Testspada.Items
 			item.scale = 1.25f;
 			item.useTime = 30;
 			item.useAnimation = 20;
-			item.useStyle = 1;
+			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 12;
 			item.value = 30000;
-			item.rare = 9;
+			item.rare = ItemRarityID.Cyan;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
@@ -33,7 +33,7 @@ namespace Testspada.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipetitanium = new ModRecipe(mod);
-			recipetitanium.AddIngredient(this.GetItem("BuffSword"));
+			recipetitanium.AddIngredient(ModContent.ItemType<BuffSword>());
 			recipetitanium.AddIngredient(ItemID.TitaniumSword);
 			recipetitanium.AddIngredient(ItemID.CrystalShard, 20);
 			recipetitanium.AddIngredient(ItemID.SpellTome);
@@ -42,7 +42,7 @@ namespace Testspada.Items
 			recipetitanium.AddRecipe();
 
 			ModRecipe recipeadamantite = new ModRecipe(mod);
-			recipeadamantite.AddIngredient(this.GetItem("BuffSword"));
+			recipeadamantite.AddIngredient(ModContent.ItemType<BuffSword>());
 			recipeadamantite.AddIngredient(ItemID.AdamantiteSword);
 			recipeadamantite.AddIngredient(ItemID.CrystalShard, 20);
 			recipeadamantite.AddIngredient(ItemID.SpellTome);
