@@ -14,12 +14,12 @@ namespace Testspada.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 92;
-			item.crit = 10;
+			item.damage = 112;
+			item.crit = 15;
 			item.melee = true;
 			item.width = 150;
 			item.height = 150;
-			item.scale = 1.25f;
+			item.scale = 1.5f;
 			item.useTime = 30;
 			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.SwingThrow;
@@ -53,7 +53,8 @@ namespace Testspada.Items
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
-			int[] Potenziamento = { BuffID.Rage, BuffID.Wrath, BuffID.ShadowDodge, BuffID.Merfolk, BuffID.Werewolf, BuffID.BeetleEndurance3, BuffID.LeafCrystal, BuffID.IceBarrier, BuffID.BeetleMight3, BuffID.NebulaUpDmg3, BuffID.NebulaUpLife3, BuffID.NebulaUpMana3, BuffID.SolarShield3, BuffID.StardustGuardianMinion, BuffID.ParryDamageBuff };
+			//mettere più buffs personalizzati e potenziati
+			int[] Potenziamento = { ModContent.BuffType<Buffs.SuperWrath>() };
 			int Lunghezza = Potenziamento.Length;
 			Random rnd = new Random();
 			if (crit)
