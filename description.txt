@@ -19,6 +19,7 @@ v 0.3
 -some change and balancement in "The Buff Sword"
 -some buffs have been put into the new sword
 -added the homepage for the repository of the mod
+-added six new buff (obtainable only with the Buffer Sword)
 
 v 0.2.1
 

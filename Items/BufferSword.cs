@@ -23,7 +23,7 @@ namespace Testspada.Items
 			item.useTime = 30;
 			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.knockBack = 12;
+			item.knockBack = 10;
 			item.value = 30000;
 			item.rare = ItemRarityID.Cyan;
 			item.UseSound = SoundID.Item1;
@@ -54,7 +54,7 @@ namespace Testspada.Items
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
 			//mettere più buffs personalizzati e potenziati
-			int[] Potenziamento = { ModContent.BuffType<Buffs.SuperWrath>() };
+			int[] Potenziamento = { ModContent.BuffType<Buffs.SuperWrath>(), ModContent.BuffType<Buffs.TerriblyPissedOff>(), ModContent.BuffType<Buffs.Fortification>(), ModContent.BuffType<Buffs.BouncyBouncy>(), ModContent.BuffType<Buffs.UltraSwiftness>(), ModContent.BuffType<Buffs.GreenInferno>() };
 			int Lunghezza = Potenziamento.Length;
 			Random rnd = new Random();
 			if (crit)
