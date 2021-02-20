@@ -3,7 +3,9 @@
 ## Mod Content
 
 this mod add two more sword with a simple mechanic: if you crit with one of them, then a particularly powerful buff will activate for a limited duration and continuously
+
 -The Buff Sword active only potion buffs, that are in vanilla game;
+
 -The Buffer Sword, instead, active only modded buff that i created, which are enhanced versions of normal buffs
 
 the mod will be continuously updated 
