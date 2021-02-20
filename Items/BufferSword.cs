@@ -14,14 +14,14 @@ namespace Testspada.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 112;
+			item.damage = 156;
 			item.crit = 15;
 			item.melee = true;
 			item.width = 150;
 			item.height = 150;
-			item.scale = 1.5f;
-			item.useTime = 30;
-			item.useAnimation = 20;
+			item.scale = 2;
+			item.useTime = 40;
+			item.useAnimation = 30;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 10;
 			item.value = 30000;

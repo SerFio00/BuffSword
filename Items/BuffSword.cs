@@ -15,16 +15,17 @@ namespace Testspada.Items
 
 		public override void SetDefaults() 
 		{
-			item.damage = 16;
+			item.damage = 28;
 			item.crit = 5;
 			item.melee = true;
 			item.width = 50;
 			item.height = 50;
-			item.useTime = 25;
-			item.useAnimation = 15;
+			item.useTime = 30;
+			item.scale = 1.25f;
+			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 10;
-			item.value = 10000;
+			item.value = 20000;
 			item.rare = ItemRarityID.Pink;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;

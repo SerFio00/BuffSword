@@ -13,6 +13,13 @@ enjoy my mod and Report in the homepage (via issue) for bug and problem with the
 
 Warning! the sprite of "The Buffer Sword" is not finished yet!
 
+v 0.3.1
+
+balances and nerf:
+-now Buff Sword and Buffer Sword deal more damage, but use time is higher
+-Buff Sword and Buffer Sword are Bigger
+-Buff Sword is worth more
+
 v 0.3
 
 -a new Sword appear in the battleground: "The Buffer Sword", craftable with "The Buff Sword"
