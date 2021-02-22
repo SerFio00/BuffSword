@@ -15,13 +15,13 @@ namespace Testspada.Items
 
 		public override void SetDefaults() 
 		{
-			item.damage = 28;
-			item.crit = 5;
+			item.damage = 34;
+			item.crit = 10;
 			item.melee = true;
 			item.width = 50;
 			item.height = 50;
 			item.useTime = 30;
-			item.scale = 1.25f;
+			item.scale = 1.50f;
 			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 10;
@@ -33,33 +33,57 @@ namespace Testspada.Items
 
 		public override void AddRecipes() 
 		{
-			ModRecipe recipeplatinum = new ModRecipe(mod);
-			recipeplatinum.AddIngredient(ItemID.PlatinumBroadsword, 1);
-			recipeplatinum.AddIngredient(ItemID.Daybloom, 5);
-			recipeplatinum.AddIngredient(ItemID.Moonglow, 5);
-			recipeplatinum.AddIngredient(ItemID.Blinkroot, 5);
-			recipeplatinum.AddIngredient(ItemID.Deathweed, 5);
-			recipeplatinum.AddIngredient(ItemID.Waterleaf, 5);
-			recipeplatinum.AddIngredient(ItemID.Fireblossom, 5);
-			recipeplatinum.AddIngredient(ItemID.Shiverthorn, 5);
-			recipeplatinum.AddTile(TileID.AlchemyTable);
-			recipeplatinum.AddTile(TileID.Bottles);
-			recipeplatinum.SetResult(this);
-			recipeplatinum.AddRecipe();
+			ModRecipe recipeplatinumb = new ModRecipe(mod);
+			recipeplatinumb.AddIngredient(ItemID.PlatinumBroadsword, 1);
+			recipeplatinumb.AddIngredient(ItemID.Daybloom, 5);
+			recipeplatinumb.AddIngredient(ItemID.Moonglow, 5);
+			recipeplatinumb.AddIngredient(ItemID.Blinkroot, 5);
+			recipeplatinumb.AddIngredient(ItemID.Deathweed, 5);
+			recipeplatinumb.AddIngredient(ItemID.Waterleaf, 5);
+			recipeplatinumb.AddIngredient(ItemID.Fireblossom, 5);
+			recipeplatinumb.AddIngredient(ItemID.Shiverthorn, 5);
+			recipeplatinumb.AddTile(TileID.Bottles);
+			recipeplatinumb.SetResult(this);
+			recipeplatinumb.AddRecipe();
 
-			ModRecipe recipegold = new ModRecipe(mod);
-			recipegold.AddIngredient(ItemID.GoldBroadsword, 1);
-			recipegold.AddIngredient(ItemID.Daybloom, 5);
-			recipegold.AddIngredient(ItemID.Moonglow, 5);
-			recipegold.AddIngredient(ItemID.Blinkroot, 5);
-			recipegold.AddIngredient(ItemID.Deathweed, 5);
-			recipegold.AddIngredient(ItemID.Waterleaf, 5);
-			recipegold.AddIngredient(ItemID.Fireblossom, 5);
-			recipegold.AddIngredient(ItemID.Shiverthorn, 5);
-			recipegold.AddTile(TileID.AlchemyTable);
-			recipegold.AddTile(TileID.Bottles);
-			recipegold.SetResult(this);
-			recipegold.AddRecipe();
+			ModRecipe recipegoldb = new ModRecipe(mod);
+			recipegoldb.AddIngredient(ItemID.GoldBroadsword, 1);
+			recipegoldb.AddIngredient(ItemID.Daybloom, 5);
+			recipegoldb.AddIngredient(ItemID.Moonglow, 5);
+			recipegoldb.AddIngredient(ItemID.Blinkroot, 5);
+			recipegoldb.AddIngredient(ItemID.Deathweed, 5);
+			recipegoldb.AddIngredient(ItemID.Waterleaf, 5);
+			recipegoldb.AddIngredient(ItemID.Fireblossom, 5);
+			recipegoldb.AddIngredient(ItemID.Shiverthorn, 5);
+			recipegoldb.AddTile(TileID.Bottles);
+			recipegoldb.SetResult(this);
+			recipegoldb.AddRecipe();
+
+			ModRecipe recipeplatinuma = new ModRecipe(mod);
+			recipeplatinuma.AddIngredient(ItemID.PlatinumBroadsword, 1);
+			recipeplatinuma.AddIngredient(ItemID.Daybloom, 5);
+			recipeplatinuma.AddIngredient(ItemID.Moonglow, 5);
+			recipeplatinuma.AddIngredient(ItemID.Blinkroot, 5);
+			recipeplatinuma.AddIngredient(ItemID.Deathweed, 5);
+			recipeplatinuma.AddIngredient(ItemID.Waterleaf, 5);
+			recipeplatinuma.AddIngredient(ItemID.Fireblossom, 5);
+			recipeplatinuma.AddIngredient(ItemID.Shiverthorn, 5);
+			recipeplatinuma.AddTile(TileID.AlchemyTable);
+			recipeplatinuma.SetResult(this);
+			recipeplatinuma.AddRecipe();
+
+			ModRecipe recipegolda = new ModRecipe(mod);
+			recipegolda.AddIngredient(ItemID.GoldBroadsword, 1);
+			recipegolda.AddIngredient(ItemID.Daybloom, 5);
+			recipegolda.AddIngredient(ItemID.Moonglow, 5);
+			recipegolda.AddIngredient(ItemID.Blinkroot, 5);
+			recipegolda.AddIngredient(ItemID.Deathweed, 5);
+			recipegolda.AddIngredient(ItemID.Waterleaf, 5);
+			recipegolda.AddIngredient(ItemID.Fireblossom, 5);
+			recipegolda.AddIngredient(ItemID.Shiverthorn, 5);
+			recipegolda.AddTile(TileID.AlchemyTable);
+			recipegolda.SetResult(this);
+			recipegolda.AddRecipe();
 		}
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
