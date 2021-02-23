@@ -5,19 +5,19 @@ using System;
 
 namespace Testspada.Buffs
 {
-    public class SuperWrath : ModBuff
+    public class Regenerator : ModBuff
     {
         public override void SetDefaults()
         {
-            DisplayName.SetDefault("Super Wrath");
-            Description.SetDefault("Doubles The Damage");
+            DisplayName.SetDefault("Regenerator");
+            Description.SetDefault("Life regeneration is immensely increased");
             Main.buffNoTimeDisplay[Type] = false;
             Main.debuff[Type] = false;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.allDamage *= 2;
+            player.lifeRegen *= 3;
         }
     }
 }

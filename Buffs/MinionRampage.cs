@@ -5,19 +5,20 @@ using System;
 
 namespace Testspada.Buffs
 {
-    public class SuperWrath : ModBuff
+    public class MinionRampage : ModBuff
     {
         public override void SetDefaults()
         {
-            DisplayName.SetDefault("Super Wrath");
-            Description.SetDefault("Doubles The Damage");
+            DisplayName.SetDefault("Minion Rampage");
+            Description.SetDefault("Oh, your minions are so Angry...");
             Main.buffNoTimeDisplay[Type] = false;
             Main.debuff[Type] = false;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.allDamage *= 2;
+            player.minionDamage *= 3;
+            player.minionKB *= 2;
         }
     }
 }

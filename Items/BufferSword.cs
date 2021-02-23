@@ -23,7 +23,7 @@ namespace Testspada.Items
 			item.useTime = 40;
 			item.useAnimation = 30;
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.knockBack = 10;
+			item.knockBack = 7;
 			item.value = 30000;
 			item.rare = ItemRarityID.Cyan;
 			item.UseSound = SoundID.Item1;
@@ -54,13 +54,13 @@ namespace Testspada.Items
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
 			//mettere più buffs personalizzati e potenziati
-			int[] Potenziamento = { ModContent.BuffType<Buffs.SuperWrath>(), ModContent.BuffType<Buffs.TerriblyPissedOff>(), ModContent.BuffType<Buffs.Fortification>(), ModContent.BuffType<Buffs.BouncyBouncy>(), ModContent.BuffType<Buffs.UltraSwiftness>() };
+			int[] Potenziamento = { ModContent.BuffType<Buffs.SuperWrath>(), ModContent.BuffType<Buffs.TerriblyPissedOff>(), ModContent.BuffType<Buffs.Fortification>(), ModContent.BuffType<Buffs.BouncyBouncy>(), ModContent.BuffType<Buffs.UltraSwiftness>(), ModContent.BuffType<Buffs.ManaRevenge>(), ModContent.BuffType<Buffs.MageBlessing>(), ModContent.BuffType<Buffs.Regenerator>(), ModContent.BuffType<Buffs.MinionRampage>() };
 			int Lunghezza = Potenziamento.Length;
 			Random rnd = new Random();
 			if (crit)
 			{
 				int i = rnd.Next(Lunghezza);
-				player.AddBuff(Potenziamento[i], 15 * 60);
+				player.AddBuff(Potenziamento[i], 20 * 60);
 			}
 		}
 	}

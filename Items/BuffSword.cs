@@ -24,7 +24,7 @@ namespace Testspada.Items
 			item.scale = 1.50f;
 			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.knockBack = 10;
+			item.knockBack = 6;
 			item.value = 20000;
 			item.rare = ItemRarityID.Pink;
 			item.UseSound = SoundID.Item1;
@@ -94,7 +94,7 @@ namespace Testspada.Items
             if (crit)
             {
 				int i = rnd.Next(Lunghezza);
-				player.AddBuff(Potenziamento[i], 30 * 60);
+				player.AddBuff(Potenziamento[i], 40 * 60);
             }
 
         }
