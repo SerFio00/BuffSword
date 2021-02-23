@@ -13,6 +13,10 @@ enjoy my mod and Report in the homepage (via issue) for bug and problem with the
 
 Warning! the sprite of "The Buffer Sword" is not finished yet!
 
+v 0.3.3
+
+more buffs for The Buffer Sword, try it!
+
 v 0.3.2
 
 fixed a bug which required the player to have the bottle and the alchemical table close together
