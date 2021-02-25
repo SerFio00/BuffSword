@@ -24,7 +24,7 @@ namespace Testspada.Items
 			item.scale = 1.50f;
 			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.SwingThrow;
-			item.knockBack = 6;
+			item.knockBack = 4;
 			item.value = 20000;
 			item.rare = ItemRarityID.Pink;
 			item.UseSound = SoundID.Item1;

@@ -13,6 +13,13 @@ enjoy my mod and Report in the homepage (via issue) for bug and problem with the
 
 Warning! the sprite of "The Buffer Sword" is not finished yet!
 
+v 0.3.4
+
+-more preparation for 0.4
+-more buffs for The Buffer Sword
+-more fix
+-more balance for the KB
+
 v 0.3.3
 
 more buffs for The Buffer Sword, try it!
