@@ -14,7 +14,7 @@ namespace Testspada.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 186;
+			item.damage = 82;
 			item.crit = 20;
 			item.melee = true;
 			item.width = 150;

@@ -1,4 +1,4 @@
 displayName = The Buff Sword
 author = SerFio
-version = 0.3.4
+version = 0.3.5
 homepage = https://github.com/SerFio00/BuffSword
