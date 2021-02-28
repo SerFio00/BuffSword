@@ -13,6 +13,14 @@ enjoy my mod and Report in the homepage (via issue) for bug and problem with the
 
 Warning! the sprite of "The Buffer Sword" is not finished yet!
 
+v 0.4
+
+yeah, It has arrived!
+
+now The Buffer Sword have a new and different Sprite, enjoy it!
+
+i have done some other fix, in the future a new weapon can be added, stay tuned!
+
 v 0.3.5
 
 some minor fix
