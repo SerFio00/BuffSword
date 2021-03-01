@@ -35,7 +35,7 @@ namespace Testspada.Items
 			ModRecipe recipetitanium = new ModRecipe(mod);
 			recipetitanium.AddIngredient(ModContent.ItemType<BuffSword>());
 			recipetitanium.AddIngredient(ItemID.TitaniumSword);
-			recipetitanium.AddIngredient(ItemID.CrystalShard, 300);
+			recipetitanium.AddIngredient(ItemID.CrystalShard, 20);
 			recipetitanium.AddIngredient(ItemID.SpellTome);
 			recipetitanium.AddTile(TileID.CrystalBall);
 			recipetitanium.SetResult(this);
@@ -44,7 +44,7 @@ namespace Testspada.Items
 			ModRecipe recipeadamantite = new ModRecipe(mod);
 			recipeadamantite.AddIngredient(ModContent.ItemType<BuffSword>());
 			recipeadamantite.AddIngredient(ItemID.AdamantiteSword);
-			recipeadamantite.AddIngredient(ItemID.CrystalShard, 300);
+			recipeadamantite.AddIngredient(ItemID.CrystalShard, 20);
 			recipeadamantite.AddIngredient(ItemID.SpellTome);
 			recipeadamantite.AddTile(TileID.CrystalBall);
 			recipeadamantite.SetResult(this);
