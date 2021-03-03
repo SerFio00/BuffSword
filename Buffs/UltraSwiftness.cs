@@ -17,8 +17,8 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.runAcceleration *= 2;
-            player.moveSpeed *= 2f;
+            player.runAcceleration *= 3;
+            player.moveSpeed *= 2.5f;
             player.noKnockback = true;
         }
     }

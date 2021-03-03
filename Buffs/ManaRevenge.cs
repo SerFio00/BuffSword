@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.manaRegen *= 5;
+            player.manaRegen = player.manaRegen+10;
         }
     }
 }

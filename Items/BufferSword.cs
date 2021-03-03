@@ -14,12 +14,12 @@ namespace Testspada.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 84;
+			item.damage = 62;
 			item.crit = 15;
 			item.melee = true;
-			item.width = 150;
-			item.height = 150;
-			item.scale = 2.75f;
+			item.width = 100;
+			item.height = 100;
+			item.scale = 2;
 			item.useTime = 45;
 			item.useAnimation = 35;
 			item.useStyle = ItemUseStyleID.SwingThrow;
@@ -60,7 +60,7 @@ namespace Testspada.Items
 			if (crit)
 			{
 				int i = rnd.Next(Lunghezza);
-				player.AddBuff(Potenziamento[i], 30 * 60);
+				player.AddBuff(Potenziamento[i], 25 * 60);
 			}
 		}
 	}

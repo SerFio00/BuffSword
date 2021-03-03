@@ -10,14 +10,14 @@ namespace Testspada.Buffs
         public override void SetDefaults()
         {
             DisplayName.SetDefault("Mage Blessing");
-            Description.SetDefault("a Mage bless you: Mana usage set to 1");
+            Description.SetDefault("a Mage bless you: Mana usage -10");
             Main.buffNoTimeDisplay[Type] = false;
             Main.debuff[Type] = false;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.manaCost = 1;
+            player.manaCost -= 10;
         }
     }
 }

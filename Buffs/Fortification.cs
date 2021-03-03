@@ -10,14 +10,14 @@ namespace Testspada.Buffs
         public override void SetDefaults()
         {
             DisplayName.SetDefault("Fortification");
-            Description.SetDefault("Doubles your Defense");
+            Description.SetDefault("Fortification added!");
             Main.buffNoTimeDisplay[Type] = false;
             Main.debuff[Type] = false;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.statDefense *= 2;
+            player.statDefense = player.statDefense*2;
         }
     }
 }
