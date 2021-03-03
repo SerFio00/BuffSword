@@ -13,6 +13,10 @@ enjoy my mod and Report in the homepage (via issue) for bug and problem with the
 
 Warning! the sprite of "The Buffer Sword" is not finished yet!
 
+v 0.4.2
+
+thanks to some report, i fix almost all the buff
+
 v 0.4.1
 
 fixed the amount of crystal shard required for The Buffer Sword (300-->20)
