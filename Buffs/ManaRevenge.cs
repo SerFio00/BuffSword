@@ -10,14 +10,14 @@ namespace Testspada.Buffs
         public override void SetDefaults()
         {
             DisplayName.SetDefault("Mana Revenge");
-            Description.SetDefault("Mana Regeneration greatly increase (5 times)");
+            Description.SetDefault("Mana Regeneration increase by 20");
             Main.buffNoTimeDisplay[Type] = false;
             Main.debuff[Type] = false;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.manaRegen = player.manaRegen+10;
+            player.manaRegen = player.manaRegen+20;
         }
     }
 }

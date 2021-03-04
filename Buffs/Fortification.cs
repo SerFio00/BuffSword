@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.statDefense = player.statDefense*2;
+            player.statDefense = player.statDefense+40;
         }
     }
 }

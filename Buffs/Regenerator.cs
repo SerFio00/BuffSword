@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.lifeRegen = player.lifeRegen+5;
+            player.lifeRegen = player.lifeRegen+15;
         }
     }
 }
