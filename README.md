@@ -10,6 +10,8 @@ this mod add two more sword with a simple mechanic: if you crit with one of them
 
 the mod will be continuously updated 
 
+it's currently planned to create ranged weapon that do the same thing of the sword.
+
 ### The tips are welcome!
 
 if you have any ideas, or if you see an error in the mod or directly in the code, you can create an "Issues", don't be shy!
