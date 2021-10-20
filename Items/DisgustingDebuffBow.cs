@@ -6,17 +6,17 @@ using Microsoft.Xna.Framework;
 
 namespace Testspada.Items
 {
-	public class CorruptedDebuffBow : ModItem
+	public class DisgustingDebuffBow : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Corrupted Debuff Bow");
+			DisplayName.SetDefault("Disgusting Debuff Bow");
 			Tooltip.SetDefault("shoot 2 Arrow: one random arrow and an arrow that give random debuff to the enemy");
 		}
 
 		public override void SetDefaults()
 		{
-			item.damage = 5;
+			item.damage = 6;
 			item.melee = false;
 			item.ranged = true;
 			item.width = 12;
@@ -30,21 +30,21 @@ namespace Testspada.Items
 			item.UseSound = SoundID.Item5;
 			item.autoReuse = true;
 			item.useAmmo = AmmoID.Arrow;
-			item.shoot = ModContent.ProjectileType<Projectiles.CorruptedArrow>();
+			item.shoot = ModContent.ProjectileType<Projectiles.DisgustingArrow>();
 			item.shootSpeed = 7;
 		}
 
 		public override void AddRecipes()
 		{
-			ModRecipe recipecorruption = new ModRecipe(mod);
-			recipecorruption.AddIngredient(ItemID.DemonBow);
-			recipecorruption.AddIngredient(ItemID.Gel, 100);
-			recipecorruption.AddIngredient(ItemID.PinkGel, 20);
-			recipecorruption.AddIngredient(ItemID.Stinger, 5);
-			recipecorruption.AddIngredient(ItemID.RottenChunk, 10);
-			recipecorruption.AddTile(TileID.Anvils);
-			recipecorruption.SetResult(this);
-			recipecorruption.AddRecipe();
+			ModRecipe recipecrimson = new ModRecipe(mod);
+			recipecrimson.AddIngredient(ItemID.TendonBow);
+			recipecrimson.AddIngredient(ItemID.Gel, 100);
+			recipecrimson.AddIngredient(ItemID.PinkGel, 20);
+			recipecrimson.AddIngredient(ItemID.Stinger, 5);
+			recipecrimson.AddIngredient(ItemID.Vertebrae, 10);
+			recipecrimson.AddTile(TileID.Anvils);
+			recipecrimson.SetResult(this);
+			recipecrimson.AddRecipe();
 		}
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
@@ -57,7 +57,7 @@ namespace Testspada.Items
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
 			Vector2 Speed = new Vector2(speedX, speedY);
-			type = Projectile.NewProjectile(position, Speed, ModContent.ProjectileType<Projectiles.CorruptedArrow>(), damage, knockBack, player.whoAmI);
+			type = Projectile.NewProjectile(position, Speed, ModContent.ProjectileType<Projectiles.DisgustingArrow>(), damage, knockBack, player.whoAmI);
 			return true;
 		}
 	}

@@ -6,10 +6,10 @@ using Terraria.ModLoader;
 
 namespace Testspada.Projectiles
 {
-	public class CorruptedArrow : ModProjectile
+	public class DisgustingArrow : ModProjectile
 	{
 		public override void SetStaticDefaults() {
-			DisplayName.SetDefault("Corrupted Arrow");     //The English name of the projectile
+			DisplayName.SetDefault("Disgusting Arrow");     //The English name of the projectile
 			ProjectileID.Sets.TrailCacheLength[projectile.type] = 5;    //The length of old position to be recorded
 			ProjectileID.Sets.TrailingMode[projectile.type] = 0;        //The recording mode
 		}

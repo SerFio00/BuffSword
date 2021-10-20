@@ -9,9 +9,15 @@ this sword also can be used to create a more powerful counterpart in hardmode: T
 
 those Swords have a strange feature: if you deal critical damage with Them, you receive a random buff for less than a minute (only potion buffs with Buff sword, special buff for Buffer Sword)
 
+this mod also add a new bow, that give random debuff to the enemy for each shot, this bow can be done with the Tendon bow or Demon bow (respectively if your world has corruption or crimson)
+
 enjoy my mod and Report in the homepage (via issue) for bug and problem with the mod (or just to help me find ideas)
 
-Warning! the sprite of "The Buffer Sword" is not finished yet!
+v 0.5
+
+-added two bow: one for Corruption world and one for Crimson world
+-each bow have a new custom arrow that do random debuff to the enemy
+-each bow replaces the arrows you shoot with arrows that the bow has to fire, so no type of arrow is required 
 
 v 0.4.2
 
