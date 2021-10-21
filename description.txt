@@ -13,6 +13,10 @@ this mod also add a new bow, that give random debuff to the enemy for each shot,
 
 enjoy my mod and Report in the homepage (via issue) for bug and problem with the mod (or just to help me find ideas)
 
+v 0.6
+
+-NOW THE SWORDS ARE FIRING PROJECTILE!
+
 v 0.5.3
 
 -yeah... i have to save when i write something, i know...

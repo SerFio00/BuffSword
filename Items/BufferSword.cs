@@ -28,6 +28,8 @@ namespace Testspada.Items
 			item.rare = ItemRarityID.Cyan;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
+			item.shoot = 711;
+			item.shootSpeed = 2f;
 		}
 
 		public override void AddRecipes()
