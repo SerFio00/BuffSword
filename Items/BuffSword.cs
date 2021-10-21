@@ -34,7 +34,7 @@ namespace Testspada.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipeplatinumb = new ModRecipe(mod);
-			recipeplatinumb.AddIngredient(ItemID.PlatiniumBroadsword, 1);
+			recipeplatinumb.AddIngredient(ItemID.PlatinumBroadsword, 1);
 			recipeplatinumb.AddIngredient(ItemID.Daybloom, 5);
 			recipeplatinumb.AddIngredient(ItemID.Moonglow, 5);
 			recipeplatinumb.AddIngredient(ItemID.Blinkroot, 5);
