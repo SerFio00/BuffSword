@@ -1,4 +1,4 @@
-﻿using Terraria.ID;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using System;
@@ -11,7 +11,7 @@ namespace Testspada.Items
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Corrupted Debuff Bow");
-			Tooltip.SetDefault("shoot 2 Arrow: one random arrow and an arrow that give random debuff to the enemy");
+			Tooltip.SetDefault("Shoot 2 Arrow: one random arrow and an arrow that give random debuff to the enemy");
 		}
 
 		public override void SetDefaults()
@@ -21,7 +21,7 @@ namespace Testspada.Items
 			item.ranged = true;
 			item.width = 12;
 			item.height = 24;
-			item.useTime = 25;
+			item.useTime = 28;
 			item.useAnimation = 25;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.knockBack = 0.5f;

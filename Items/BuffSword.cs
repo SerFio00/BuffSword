@@ -10,7 +10,7 @@ namespace Testspada.Items
 		public override void SetStaticDefaults() 
 		{
 			// DisplayName.SetDefault("BuffSword"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("critical attacks trigger a random buff ");
+			Tooltip.SetDefault("Critical attacks trigger a random buff ");
 		}
 
 		public override void SetDefaults() 
@@ -34,7 +34,7 @@ namespace Testspada.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipeplatinumb = new ModRecipe(mod);
-			recipeplatinumb.AddIngredient(ItemID.PlatinumBroadsword, 1);
+			recipeplatinumb.AddIngredient(ItemID.PlatiniumBroadsword, 1);
 			recipeplatinumb.AddIngredient(ItemID.Daybloom, 5);
 			recipeplatinumb.AddIngredient(ItemID.Moonglow, 5);
 			recipeplatinumb.AddIngredient(ItemID.Blinkroot, 5);
