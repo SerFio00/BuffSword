@@ -72,14 +72,6 @@ namespace Testspada.Projectiles
 					movementFactor = 3f; // Make sure the spear moves forward when initially thrown out
 					projectile.netUpdate = true; // Make sure to netUpdate this spear
 				}
-				if (projOwner.itemAnimation < projOwner.itemAnimationMax / 3) // Somewhere along the item animation, make sure the spear moves back
-				{
-					movementFactor -= 2.4f;
-				}
-				else // Otherwise, increase the movement factor
-				{
-					movementFactor += 2.1f;
-				}
 			}
         }
     }
