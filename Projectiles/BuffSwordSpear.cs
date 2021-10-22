@@ -29,6 +29,7 @@ public class BuffSwordSpear : ModProjectile
 
     // In here the AI uses this example, to make the code more organized and readable
     // Also showcased in ExampleJavelinProjectile.cs
+    {
     public float movementFactor // Change this value to alter how fast the spear moves
     {
         get => projectile.ai[0];
