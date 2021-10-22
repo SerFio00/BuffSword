@@ -40,13 +40,14 @@ namespace Testspada.Projectiles
 			// They are useful to make numbers that don't change more descriptive
 			const int NUM_DUSTS = 20;
 			for (int i = 0; i < NUM_DUSTS; i++) {
-			// Create a new dust
-			Dust dust = dustID.43(usePos, projectile.width, projectile.height, 81);
-			dust.position = (dust.position + projectile.Center) / 2f;
-			dust.velocity += rotVector * 2f;
-			dust.velocity *= 0.5f;
-			dust.noGravity = true;
-			usePos -= rotVector * 8f;
+				// Create a new dust
+				Dust dust = dustID.43(usePos, projectile.width, projectile.height, 81);
+				dust.position = (dust.position + projectile.Center) / 2f;
+				dust.velocity += rotVector * 2f;
+				dust.velocity *= 0.5f;
+				dust.noGravity = true;
+				usePos -= rotVector * 8f;
+			}
 		}
 	}
 }
