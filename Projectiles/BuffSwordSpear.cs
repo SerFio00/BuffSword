@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using System.Collections.Generic;
 
 namespace Testspada.Projectiles
 {
@@ -30,14 +31,22 @@ namespace Testspada.Projectiles
 			projectile.extraUpdates = 1;            //Set to above 0 if you want the projectile to update multiple time in a frame
 			aiType = ProjectileID.JavelinFriendly;           //Act exactly like default Bullet
 		}
-		for (int i = 0; i < NUM_DUSTS; i++) {
-		// Create a new dust
-		Dust dust = dustID.43(usePos, projectile.width, projectile.height, 81);
-		dust.position = (dust.position + projectile.Center) / 2f;
-		dust.velocity += rotVector * 2f;
-		dust.velocity *= 0.5f;
-		dust.noGravity = true;
-		usePos -= rotVector * 8f;
+
+		public override void Kill(int timeLeft) {
+			Main.PlaySound(SoundID.Dig, (int)projectile.position.X, (int)projectile.position.Y); // Play a death sound
+			Vector2 usePos = projectile.position; // Position to use for dusts
+			// Declaring a constant in-line is fine as it will be optimized by the compiler
+			// It is however recommended to define it outside method scope if used elswhere as well
+			// They are useful to make numbers that don't change more descriptive
+			const int NUM_DUSTS = 20;
+			for (int i = 0; i < NUM_DUSTS; i++) {
+			// Create a new dust
+			Dust dust = dustID.43(usePos, projectile.width, projectile.height, 81);
+			dust.position = (dust.position + projectile.Center) / 2f;
+			dust.velocity += rotVector * 2f;
+			dust.velocity *= 0.5f;
+			dust.noGravity = true;
+			usePos -= rotVector * 8f;
 		}
 	}
 }
