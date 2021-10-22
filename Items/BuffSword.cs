@@ -30,7 +30,7 @@ namespace Testspada.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.shoot = ModContent.ProjectileType<Projectiles.BuffSwordSpear>();
-			item.shootSpeed = 8f;
+			item.shootSpeed = 10f;
 		}
 
 		public override void AddRecipes() 
@@ -98,7 +98,12 @@ namespace Testspada.Items
 				int i = rnd.Next(Lunghezza);
 				player.AddBuff(Potenziamento[i], 40 * 60);
             }
-
-        }
+		}
+		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+		{
+			Vector2 Speed = new Vector2(speedX, speedY);
+			type = Projectile.NewProjectile(position, Speed, ModContent.ProjectileType<Projectiles.BuffSwordSpear>(), damage, knockBack, player.whoAmI);
+			return true;
+		}
 	}
 }
