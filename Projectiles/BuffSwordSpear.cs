@@ -66,12 +66,21 @@ namespace Testspada.Projectiles
             }
             // Apply proper rotation, with an offset of 135 degrees due to the sprite's rotation, notice the usage of MathHelper, use this class!
             // MathHelper.ToRadians(xx degrees here)
-            projectile.rotation = projectile.velocity.ToRotation() + MathHelper.ToRadians(135f);
-            // Offset by 90 degrees here
-            if (projectile.spriteDirection == -1)
-            {
-                projectile.rotation -= MathHelper.ToRadians(90f);
-            }
+			if (!projOwner.frozen) {
+				if (movementFactor == 0f) // When initially thrown out, the ai0 will be 0f
+				{
+					movementFactor = 3f; // Make sure the spear moves forward when initially thrown out
+					projectile.netUpdate = true; // Make sure to netUpdate this spear
+				}
+				if (projOwner.itemAnimation < projOwner.itemAnimationMax / 3) // Somewhere along the item animation, make sure the spear moves back
+				{
+					movementFactor -= 2.4f;
+				}
+				else // Otherwise, increase the movement factor
+				{
+					movementFactor += 2.1f;
+				}
+			}
         }
     }
 }
