@@ -30,5 +30,14 @@ namespace Testspada.Projectiles
 			projectile.extraUpdates = 1;            //Set to above 0 if you want the projectile to update multiple time in a frame
 			aiType = ProjectileID.JavelinFriendly;           //Act exactly like default Bullet
 		}
+		for (int i = 0; i < NUM_DUSTS; i++) {
+		// Create a new dust
+		Dust dust = dustID.43(usePos, projectile.width, projectile.height, 81);
+		dust.position = (dust.position + projectile.Center) / 2f;
+		dust.velocity += rotVector * 2f;
+		dust.velocity *= 0.5f;
+		dust.noGravity = true;
+		usePos -= rotVector * 8f;
+		}
 	}
 }
