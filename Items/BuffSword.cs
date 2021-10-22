@@ -30,7 +30,7 @@ namespace Testspada.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.shoot = 507;
-			item.shootSpeed = 3f;
+			item.shootSpeed = 8f;
 		}
 
 		public override void AddRecipes() 
