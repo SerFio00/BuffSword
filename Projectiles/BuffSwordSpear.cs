@@ -50,15 +50,7 @@ namespace Testspada.Projectiles
             projectile.position.X = ownerMountedCenter.X - (float)(projectile.width / 2);
             projectile.position.Y = ownerMountedCenter.Y - (float)(projectile.height / 2);
             // As long as the player isn't frozen, the spear can move
-            if (!projOwner.frozen) {
-				if (movementFactor == 0f) // When initially thrown out, the ai0 will be 0f
-				{
-					movementFactor = 3f; // Make sure the spear moves forward when initially thrown out
-					projectile.netUpdate = true; // Make sure to netUpdate this spear
-				}
-			}
             // Change the spear position based off of the velocity and the movementFactor
-            projectile.position += projectile.velocity * movementFactor;
             // Apply proper rotation, with an offset of 135 degrees due to the sprite's rotation, notice the usage of MathHelper, use this class!
             // MathHelper.ToRadians(xx degrees here)
 			if (!projOwner.frozen) {
