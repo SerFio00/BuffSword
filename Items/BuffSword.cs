@@ -100,11 +100,5 @@ namespace Testspada.Items
 				player.AddBuff(Potenziamento[i], 40 * 60);
             }
 		}
-		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
-		{
-			Vector2 Speed = new Vector2(speedX, speedY);
-			type = Projectile.NewProjectile(position, Speed, ModContent.ProjectileType<Projectiles.BuffSwordSpear>(), damage, knockBack, player.whoAmI);
-			return true;
-		}
 	}
 }
