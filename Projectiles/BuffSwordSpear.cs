@@ -59,11 +59,6 @@ namespace Testspada.Projectiles
 			}
             // Change the spear position based off of the velocity and the movementFactor
             projectile.position += projectile.velocity * movementFactor;
-            // When we reach the end of the animation, we can kill the spear projectile
-            if (projOwner.itemAnimation == 0)
-            {
-                projectile.Kill();
-            }
             // Apply proper rotation, with an offset of 135 degrees due to the sprite's rotation, notice the usage of MathHelper, use this class!
             // MathHelper.ToRadians(xx degrees here)
 			if (!projOwner.frozen) {
