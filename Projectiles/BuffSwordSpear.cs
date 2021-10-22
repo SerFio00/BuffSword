@@ -50,22 +50,6 @@ namespace Testspada.Projectiles
             projectile.position.X = ownerMountedCenter.X - (float)(projectile.width / 2);
             projectile.position.Y = ownerMountedCenter.Y - (float)(projectile.height / 2);
             // As long as the player isn't frozen, the spear can move
-            if (!projOwner.frozen)
-            {
-                if (movementFactor == 0f) // When initially thrown out, the ai0 will be 0f
-                {
-                    movementFactor = 3f; // Make sure the spear moves forward when initially thrown out
-                    projectile.netUpdate = true; // Make sure to netUpdate this spear
-                }
-                if (projOwner.itemAnimation < projOwner.itemAnimationMax / 3) // Somewhere along the item animation, make sure the spear moves back
-                {
-                    movementFactor -= 2.4f;
-                }
-                else // Otherwise, increase the movement factor
-                {
-                    movementFactor += 2.1f;
-                }
-            }
             // Change the spear position based off of the velocity and the movementFactor
             projectile.position += projectile.velocity * movementFactor;
             // When we reach the end of the animation, we can kill the spear projectile
