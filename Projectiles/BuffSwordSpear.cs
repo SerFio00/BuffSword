@@ -1,8 +1,10 @@
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Testspada.Projectiles;
+namespace Testspada.Projectiles
 {
     public class BuffSwordSpear : ModProjectile
     {
