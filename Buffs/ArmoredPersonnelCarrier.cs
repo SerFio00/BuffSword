@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.maxMinions *= 20;
+            player.maxMinions *= 50;
         }
     }
 }

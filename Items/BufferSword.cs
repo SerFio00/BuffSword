@@ -14,7 +14,7 @@ namespace Testspada.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 62;
+			item.damage = 74;
 			item.crit = 10;
 			item.melee = true;
 			item.width = 100;
@@ -29,7 +29,7 @@ namespace Testspada.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.shoot = 711;
-			item.shootSpeed = 16f;
+			item.shootSpeed = 20f;
 		}
 
 		public override void AddRecipes()
@@ -62,7 +62,7 @@ namespace Testspada.Items
 			if (crit)
 			{
 				int i = rnd.Next(Lunghezza);
-				player.AddBuff(Potenziamento[i], 20 * 60);
+				player.AddBuff(Potenziamento[i], 30 * 60);
 			}
 		}
 	}

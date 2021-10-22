@@ -16,7 +16,7 @@ namespace Testspada.Items
 
 		public override void SetDefaults() 
 		{
-			item.damage = 34;
+			item.damage = 36;
 			item.crit = 10;
 			item.melee = true;
 			item.width = 50;
@@ -31,7 +31,7 @@ namespace Testspada.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.shoot = ModContent.ProjectileType<Projectiles.BuffSwordSpear>();
-			item.shootSpeed = 10f;
+			item.shootSpeed = 12f;
 		}
 
 		public override void AddRecipes() 
@@ -97,7 +97,7 @@ namespace Testspada.Items
             if (crit)
             {
 				int i = rnd.Next(Lunghezza);
-				player.AddBuff(Potenziamento[i], 40 * 60);
+				player.AddBuff(Potenziamento[i], 50 * 60);
             }
 		}
 	}

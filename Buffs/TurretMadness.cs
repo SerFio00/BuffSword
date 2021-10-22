@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.maxTurrets *= 20;
+            player.maxTurrets *= 50;
         }
     }
 }

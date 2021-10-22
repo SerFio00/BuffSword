@@ -16,12 +16,12 @@ namespace Testspada.Items
 
 		public override void SetDefaults()
 		{
-			item.damage = 5;
+			item.damage = 16;
 			item.melee = false;
 			item.ranged = true;
 			item.width = 12;
 			item.height = 24;
-			item.useTime = 28;
+			item.useTime = 24;
 			item.useAnimation = 25;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.knockBack = 0.5f;
