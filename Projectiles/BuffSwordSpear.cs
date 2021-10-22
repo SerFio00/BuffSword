@@ -45,7 +45,6 @@ namespace Testspada.Projectiles
 				dust.position = (dust.position + projectile.Center) / 2f;
 				dust.velocity *= 0.5f;
 				dust.noGravity = true;
-				usePos -= rotVector * 8f;
 			}
 		}
 	}
