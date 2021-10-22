@@ -30,7 +30,7 @@ namespace Testspada.Items
 			item.rare = ItemRarityID.Pink;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
-			item.shoot = 598;
+			item.shoot = ModContent.ProjectileType<Projectiles.BuffSwordSpear>();
 			item.shootSpeed = 10f;
 		}
 
