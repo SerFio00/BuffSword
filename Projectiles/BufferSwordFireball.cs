@@ -1,9 +1,9 @@
-using static Microsoft.Xna.Framework;
-using static Microsoft.Xna.Framework.Graphics;
-using static Terraria;
-using static Terraria.ID;
-using static Terraria.ModLoader;
-using static System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+using System.Collections.Generic;
 using static Terraria.ID.SoundID;
 
 namespace Testspada.Projectiles
