@@ -5,6 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System.Collections.Generic;
 using static Terraria.ID.SoundID;
+using Terraria.Audio;
 
 namespace Testspada.Projectiles
 {
