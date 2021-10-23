@@ -36,12 +36,12 @@ namespace Testspada.Projectiles
 
         public override void Kill(int timeLeft)
         {
-            Main.PlaySound(SoundID.14, (int)projectile.position.X, (int)projectile.position.Y); // Play a death sound
+            Main.PlaySound(SoundID.2 : 14, (int)projectile.position.X, (int)projectile.position.Y); // Play a death sound
             Vector2 usePos = projectile.position; // Position to use for dusts
-                                                  // Declaring a constant in-line is fine as it will be optimized by the compiler
-                                                  // It is however recommended to define it outside method scope if used elswhere as well
-                                                  // They are useful to make numbers that don't change more descriptive
-            const int NUM_DUSTS = 50;
+            // Declaring a constant in-line is fine as it will be optimized by the compiler
+            // It is however recommended to define it outside method scope if used elswhere as well
+             // They are useful to make numbers that don't change more descriptive
+            const int NUM_DUSTS = 20;
             for (int i = 0; i < NUM_DUSTS; i++)
             {
                 // Create a new dust
