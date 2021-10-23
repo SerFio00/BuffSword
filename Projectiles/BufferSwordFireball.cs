@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using System.Console;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
