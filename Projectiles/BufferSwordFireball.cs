@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System.Collections.Generic;
+using Terraria.ID.SoundID;
 
 namespace Testspada.Projectiles
 {
@@ -36,7 +37,7 @@ namespace Testspada.Projectiles
 
         public override void Kill(int timeLeft)
         {
-            Main.PlaySound(SoundID.2 : 14, (int)projectile.position.X, (int)projectile.position.Y); // Play a death sound
+            Main.PlaySound(SoundID.CreateTrackable("dd2_betsy_fireball_impact", 3, SoundType.Sound) (int)projectile.position.X, (int)projectile.position.Y); // Play a death sound
             Vector2 usePos = projectile.position; // Position to use for dusts
             // Declaring a constant in-line is fine as it will be optimized by the compiler
             // It is however recommended to define it outside method scope if used elswhere as well
