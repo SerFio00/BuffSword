@@ -37,7 +37,7 @@ namespace Testspada.Projectiles
 
         public override void Kill(int timeLeft)
         {
-            Main.PlaySound(SoundID.CreateTrackable("dd2_betsy_fireball_impact", 3, SoundType.Sound); // Play a death sound
+            Main.PlaySound(SoundID.CreateTrackable("dd2_betsy_fireball_impact", 3, SoundType.Sound)); // Play a death sound
             Vector2 usePos = projectile.position; // Position to use for dusts
             // Declaring a constant in-line is fine as it will be optimized by the compiler
             // It is however recommended to define it outside method scope if used elswhere as well
