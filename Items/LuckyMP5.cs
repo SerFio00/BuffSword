@@ -44,7 +44,7 @@ namespace Testspada.Items
 			recipecorruption.AddIngredient(ItemID.Bone, 10);
 			recipecorruption.AddIngredient(ModContent.ItemType<CorruptedDebuffBow>());
 			recipecorruption.AddIngredient(ItemID.ShadowScale, 5);
-			recipecorruption.AddTile(TileID.HellForge);
+			recipecorruption.AddTile(TileID.Hellforge);
 			recipecorruption.SetResult(this);
 			recipecorruption.AddRecipe();
 
@@ -54,7 +54,7 @@ namespace Testspada.Items
 			recipecrimson.AddIngredient(ItemID.Bone, 10);
 			recipecrimson.AddIngredient(ModContent.ItemType<DisgustingDebuffBow>());
 			recipecrimson.AddIngredient(ItemID.TissueSample, 5);
-			recipecrimson.AddTile(TileID.HellForge);
+			recipecrimson.AddTile(TileID.Hellforge);
 			recipecrimson.SetResult(this);
 			recipecrimson.AddRecipe();
 		}
