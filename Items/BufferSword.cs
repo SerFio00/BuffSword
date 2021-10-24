@@ -28,7 +28,7 @@ namespace Testspada.Items
 			item.rare = ItemRarityID.Cyan;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
-			item.shoot = ModContent.ProjectileType<Projectiles.BuffSwordFireball>();
+			item.shoot = ModContent.ProjectileType<Projectiles.BufferSwordFireball>();
 			item.shootSpeed = 20f;
 		}
 
