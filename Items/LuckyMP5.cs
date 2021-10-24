@@ -18,7 +18,6 @@ namespace Testspada.Items
 		{
 			item.damage = 10;
             item.crit = 40;
-			item.critDamage *= 3;
 			item.ranged = true;
             item.melee = false;
 			item.width = 40;
