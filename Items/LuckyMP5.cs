@@ -27,7 +27,7 @@ namespace Testspada.Items
             item.useStyle = 5;
             item.knockBack = 4;
 			item.value = 50000;
-			item.rare = ItemRarityID.4;
+			item.rare = ItemRarityID.Lightred;
             item.UseSound = SoundID.Item31;
 			item.autoReuse = true;
 			item.useAmmo = AmmoID.Bullet;
