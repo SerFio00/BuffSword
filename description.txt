@@ -13,6 +13,10 @@ this mod also add a new bow, that give random debuff to the enemy for each shot,
 
 enjoy my mod and Report in the homepage (via issue) for bug and problem with the mod (or just to help me find ideas)
 
+v 0.7
+
+-a new weapon: a MP5, a lucky one!
+
 v 0.6.2.2
 
 -added a new projectile for Buffer Sword
