@@ -38,8 +38,8 @@ namespace Testspada.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipecorruption.addIngredient(itemID.ironbar, 8)
-            recipecorruption.anyIronBar = true
+			recipecorruption.addIngredient(itemID.ironbar, 8);
+            recipecorruption.anyIronBar = true;
 			recipecorruption.AddIngredient(ItemID.154, 10);
 			recipecorruption.AddIngredient(ModContent.ItemType<CorruptedDebuffBow>());
 			recipecorruption.AddIngredient(ItemID.86, 5);
@@ -48,8 +48,8 @@ namespace Testspada.Items
 			recipecorruption.AddRecipe();
 
 			recipe = new ModRecipe(mod);
-			recipecrimson.addIngredient(itemID.ironbar, 8)
-            recipecrimson.anyIronBar = true
+			recipecrimson.addIngredient(itemID.ironbar, 8);
+            recipecrimson.anyIronBar = true;
 			recipecrimson.AddIngredient(ItemID.154, 10);
 			recipecrimson.AddIngredient(ModContent.ItemType<DisgustingDebuffBow>());
 			recipecrimson.AddIngredient(ItemID.1329, 5);
