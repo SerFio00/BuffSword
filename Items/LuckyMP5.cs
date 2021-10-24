@@ -38,7 +38,7 @@ namespace Testspada.Items
 
 		public override void AddRecipes() 
 		{
-			ModRecipe recipe = new ModRecipe(mod);
+			ModRecipe recipecorruption = new ModRecipe(mod);
 			recipecorruption.AddIngredient(itemID.ironbar, 8);
             recipecorruption.anyIronBar = true;
 			recipecorruption.AddIngredient(ItemID.Bone, 10);
@@ -48,7 +48,7 @@ namespace Testspada.Items
 			recipecorruption.SetResult(this);
 			recipecorruption.AddRecipe();
 
-			recipe = new ModRecipe(mod);
+			ModRecipe recipecrimson = new ModRecipe(mod);
 			recipecrimson.AddIngredient(itemID.ironbar, 8);
             recipecrimson.anyIronBar = true;
 			recipecrimson.AddIngredient(ItemID.Bone, 10);
