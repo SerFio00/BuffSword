@@ -41,20 +41,20 @@ namespace Testspada.Items
 			ModRecipe recipe = new ModRecipe(mod);
 			recipecorruption.AddIngredient(itemID.ironbar, 8);
             recipecorruption.anyIronBar = true;
-			recipecorruption.AddIngredient(ItemID.154, 10);
+			recipecorruption.AddIngredient(ItemID.Bone, 10);
 			recipecorruption.AddIngredient(ModContent.ItemType<CorruptedDebuffBow>());
-			recipecorruption.AddIngredient(ItemID.86, 5);
-			recipecorruption.AddTile(TileID.77);
+			recipecorruption.AddIngredient(ItemID.ShadowScale, 5);
+			recipecorruption.AddTile(TileID.HellForge);
 			recipecorruption.SetResult(this);
 			recipecorruption.AddRecipe();
 
 			recipe = new ModRecipe(mod);
 			recipecrimson.AddIngredient(itemID.ironbar, 8);
             recipecrimson.anyIronBar = true;
-			recipecrimson.AddIngredient(ItemID.154, 10);
+			recipecrimson.AddIngredient(ItemID.Bone, 10);
 			recipecrimson.AddIngredient(ModContent.ItemType<DisgustingDebuffBow>());
-			recipecrimson.AddIngredient(ItemID.1329, 5);
-			recipecrimson.AddTile(TileID.77);
+			recipecrimson.AddIngredient(ItemID.TissueSample, 5);
+			recipecrimson.AddTile(TileID.HellForge);
 			recipecrimson.SetResult(this);
 			recipecrimson.AddRecipe();
 		}
