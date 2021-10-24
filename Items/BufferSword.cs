@@ -20,7 +20,7 @@ namespace Testspada.Items
 			item.width = 100;
 			item.height = 100;
 			item.scale = 2;
-			item.useTime = 45;
+			item.useTime = 42;
 			item.useAnimation = 35;
 			item.useStyle = ItemUseStyleID.SwingThrow;
 			item.knockBack = 6;
@@ -29,7 +29,7 @@ namespace Testspada.Items
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 			item.shoot = ModContent.ProjectileType<Projectiles.BufferSwordFireball>();
-			item.shootSpeed = 20f;
+			item.shootSpeed = 18f;
 		}
 
 		public override void AddRecipes()
