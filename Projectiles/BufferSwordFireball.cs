@@ -21,7 +21,7 @@ namespace Testspada.Projectiles
         {
             projectile.width = 16;               //The width of projectile hitbox
             projectile.height = 16;              //The height of projectile hitbox
-            projectile.aiStyle = 0;             //The ai style of the projectile, please reference the source code of Terraria
+            projectile.aiStyle = 1;             //The ai style of the projectile, please reference the source code of Terraria
             projectile.friendly = true;         //Can the projectile deal damage to enemies?
             projectile.hostile = false;         //Can the projectile deal damage to the player?
             projectile.ranged = false;           //Is the projectile shoot by a ranged weapon?
@@ -46,7 +46,7 @@ namespace Testspada.Projectiles
             for (int i = 0; i < NUM_DUSTS; i++)
             {
                 // Create a new dust
-                Dust dust = Dust.NewDustDirect(usePos, projectile.width, projectile.height, 269);
+                Dust dust = Dust.NewDustDirect(usePos, projectile.width, projectile.height, 226);
                 dust.position = (dust.position + projectile.Center) / 2f;
                 dust.velocity *= 0.5f;
                 dust.noGravity = true;
