@@ -64,5 +64,13 @@ namespace Testspada.Items
 			return new Vector2(-7, -10);
             return base.HoldoutOffset();
         }
+
+		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+		{
+			if (crit)
+			{
+				player.AddBuff(ModContent.BuffType<Buffs.MP5Revenge>(), 2 * 60);
+			}
+		}
     }
 }

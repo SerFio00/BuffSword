@@ -5,22 +5,19 @@ using System;
 
 namespace Testspada.Buffs
 {
-    public class TerriblyPissedOff : ModBuff
+    public class MP5Revenge : ModBuff
     {
         public override void SetDefaults()
         {
-            DisplayName.SetDefault("Terribly Pissed Off");
-            Description.SetDefault("You feel really Angry! Significantly increases the critical hit.");
+            DisplayName.SetDefault("MP5 REVENGE");
+            Description.SetDefault("MP5 bless: the Crit chance slightly up");
             Main.buffNoTimeDisplay[Type] = false;
             Main.debuff[Type] = false;
         }
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.magicCrit += 30;
-            player.meleeCrit += 30;
-            player.rangedCrit += 30;
-            player.thrownCrit += 30;
+            player.rangedCrit += 50;
         }
     }
 }
