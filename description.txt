@@ -13,6 +13,11 @@ this mod also add a new bow, that give random debuff to the enemy for each shot,
 
 enjoy my mod and Report in the homepage (via issue) for bug and problem with the mod (or just to help me find ideas)
 
+v 0.7.2
+
+-added a preview of a pre moonlord magic weapon that give all the debuff possible on hit
+-minor fix
+
 v 0.7.1
 
 -Now the MP5 got LUCKY and BUFFED! 2 more buffs added
