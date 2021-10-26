@@ -27,7 +27,7 @@ namespace Testspada.Weapons
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.shootSpeed = 14f;
 			item.useAnimation = 16;
-			item.shoot = projectileID.RainbowRodBullet;
+			item.shoot = projectileID.79;
 			item.value = Item.sellPrice(silver: 3);
 		}
 
