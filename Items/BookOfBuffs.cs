@@ -35,7 +35,7 @@ namespace Testspada.Items
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ModContent.ItemType<BufferSword>());
             recipe.AddIngredient(ModContent.ItemType<LuckyMP5>());
-			recipe.AddTile(TileID.AncientManipulator);
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
