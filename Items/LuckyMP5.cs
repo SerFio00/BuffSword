@@ -67,9 +67,13 @@ namespace Testspada.Items
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
+			int[] Potenziamento = { ModContent.BuffType<Buffs.MP5Revenge>() };
+			int Lunghezza = Potenziamento.Length;
+			Random rnd = new Random();
 			if (crit)
 			{
-				player.AddBuff(ModContent.BuffType<Buffs.MP5Revenge>(), 5 * 60);
+				int i = rnd.Next(Lunghezza);
+				player.AddBuff(Potenziamento[i], 30 * 60);
 			}
 		}
     }
