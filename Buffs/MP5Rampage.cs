@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.rangedDamage *= 1.5;
+            player.rangedDamage *= 2;
         }
     }
 }
