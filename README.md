@@ -10,7 +10,7 @@ this mod add two more sword with a simple mechanic: if you crit with one of them
 
 the mod will be continuously updated 
 
-it's currently planned to create ranged weapon that do the same thing of the sword.
+Added 3 more ranged Weapons and it is planned to add magic and summoner weapons
 
 ### The tips are welcome!
 
