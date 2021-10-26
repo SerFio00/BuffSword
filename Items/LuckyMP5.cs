@@ -62,7 +62,7 @@ namespace Testspada.Items
 
 		public override Vector2? HoldoutOffset()
         {
-			return new Vector2(-7, -15);
+			return new Vector2(-7, -2);
             return base.HoldoutOffset();
         }
 
