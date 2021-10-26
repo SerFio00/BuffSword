@@ -9,6 +9,7 @@ namespace Testspada.Items
 	{
 		public override void SetStaticDefaults()
 		{
+			DisplayName.SetDefault("Buffer Sword");
 			Tooltip.SetDefault("Critical attacks trigger a special buff");
 		}
 
