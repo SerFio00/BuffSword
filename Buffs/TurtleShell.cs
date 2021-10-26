@@ -17,7 +17,7 @@ namespace Testspada.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.Movement /= 2;
+            player.moveSpeed *= 0.5f;
             player.Defense *= 3;
         }
     }
