@@ -48,5 +48,17 @@ namespace Testspada.Projectiles
 				dust.noGravity = true;
 			}
 		}
+
+		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        {
+			int[] Potenziamento = { BuffID.AmmoReservation, BuffID.Archery, BuffID.Battle, BuffID.Builder, BuffID.Endurance, BuffID.Flipper, BuffID.Gills, BuffID.Gravitation, BuffID.Heartreach, BuffID.Hunter, BuffID.Inferno, BuffID.Invisibility, BuffID.Ironskin, BuffID.Lifeforce, BuffID.MagicPower, BuffID.ManaRegeneration, BuffID.Mining, BuffID.NightOwl, BuffID.ObsidianSkin, BuffID.Panic, BuffID.Rage, BuffID.RapidHealing, BuffID.Regeneration, BuffID.Shine, BuffID.Sonar, BuffID.Spelunker, BuffID.Swiftness, BuffID.Thorns, BuffID.Titan, BuffID.Warmth, BuffID.WaterWalking, BuffID.WellFed, BuffID.Wrath, BuffID.Summoning };
+            int Lunghezza = Potenziamento.Length;
+			Random rnd = new Random();
+            if (crit)
+            {
+				int i = rnd.Next(Lunghezza);
+				player.AddBuff(Potenziamento[i], 50 * 60);
+            }
+		}
 	}
 }
