@@ -56,7 +56,7 @@ namespace Testspada.Items
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
 			//mettere pi� buffs personalizzati e potenziati
-			int[] Potenziamento = { ModContent.BuffType<Buffs.SuperWrath>(), ModContent.BuffType<Buffs.TerriblyPissedOff>(), ModContent.BuffType<Buffs.Fortification>(), ModContent.BuffType<Buffs.BouncyBouncy>(), ModContent.BuffType<Buffs.UltraSwiftness>(), ModContent.BuffType<Buffs.ManaRevenge>(), ModContent.BuffType<Buffs.MageBlessing>(), ModContent.BuffType<Buffs.Regenerator>(), ModContent.BuffType<Buffs.MinionRampage>(), ModContent.BuffType<Buffs.TurretMadness>(), ModContent.BuffType<Buffs.ArmoredPersonnelCarrier>() };
+			int[] Potenziamento = { ModContent.BuffType<Buffs.TurtleShell>(), ModContent.BuffType<Buffs.SuperWrath>(), ModContent.BuffType<Buffs.TerriblyPissedOff>(), ModContent.BuffType<Buffs.Fortification>(), ModContent.BuffType<Buffs.BouncyBouncy>(), ModContent.BuffType<Buffs.UltraSwiftness>(), ModContent.BuffType<Buffs.ManaRevenge>(), ModContent.BuffType<Buffs.MageBlessing>(), ModContent.BuffType<Buffs.Regenerator>(), ModContent.BuffType<Buffs.MinionRampage>(), ModContent.BuffType<Buffs.TurretMadness>(), ModContent.BuffType<Buffs.ArmoredPersonnelCarrier>() };
 			int Lunghezza = Potenziamento.Length;
 			Random rnd = new Random();
 			if (crit)
