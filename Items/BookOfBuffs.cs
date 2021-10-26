@@ -14,11 +14,11 @@ namespace Testspada.Items
 		}
 
 		public override void SetDefaults() {
-			item.damage = 230;
+			item.damage = 380;
 			item.noMelee = true;
 			item.magic = true;
 			item.channel = true; //Channel so that you can hold the weapon [Important]
-			item.mana = 16;
+			item.mana = 36;
 			item.rare = ItemRarityID.Purple;
 			item.width = 28;
 			item.height = 30;
@@ -28,7 +28,7 @@ namespace Testspada.Items
 			item.shootSpeed = 14f;
 			item.useAnimation = 16;
 			item.shoot = ProjectileID.RainbowRodBullet;
-			item.value = Item.sellPrice(silver: 3);
+			item.value = Item.sellPrice(silver: 80);
 		}
 
 		public override void AddRecipes() {
