@@ -61,7 +61,7 @@ namespace Testspada.Items
 
 		public override Vector2? HoldoutOffset()
         {
-			return new Vector2(-7, -10);
+			return new Vector2(-7, -15);
             return base.HoldoutOffset();
         }
 
@@ -69,7 +69,7 @@ namespace Testspada.Items
 		{
 			if (crit)
 			{
-				player.AddBuff(ModContent.BuffType<Buffs.MP5Revenge>(), 2 * 60);
+				player.AddBuff(ModContent.BuffType<Buffs.MP5Revenge>(), 5 * 60);
 			}
 		}
     }
