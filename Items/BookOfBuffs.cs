@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System;
 
-namespace Testspada.Weapons
+namespace Testspada.Items
 {
 	public class BookOfBuffs : ModItem
 	{
@@ -27,7 +27,7 @@ namespace Testspada.Weapons
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.shootSpeed = 14f;
 			item.useAnimation = 16;
-			item.shoot = ProjectileID.79;
+			item.shoot = ProjectileID.RainbowRodBullet;
 			item.value = Item.sellPrice(silver: 3);
 		}
 
