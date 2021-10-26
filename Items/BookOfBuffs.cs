@@ -9,7 +9,7 @@ namespace Testspada.Weapons
 	{
 		public override void SetStaticDefaults() 
         {
-            DisplayName.SetDefault("Lucky MP5");
+            DisplayName.SetDefault("Book of Buffs");
 			Tooltip.SetDefault("Shoot a mix of all the debuff possible, use with caution");
 		}
 
@@ -27,7 +27,7 @@ namespace Testspada.Weapons
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.shootSpeed = 14f;
 			item.useAnimation = 16;
-			item.shoot = RainbowRodBullet;
+			item.shoot = projectileID.RainbowRodBullet;
 			item.value = Item.sellPrice(silver: 3);
 		}
 
