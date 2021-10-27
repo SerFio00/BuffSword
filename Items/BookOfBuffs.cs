@@ -4,6 +4,8 @@ using Terraria.ModLoader;
 using System;
 using Terraria.Audio;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
+using System;
 
 namespace Testspada.Items
 {
