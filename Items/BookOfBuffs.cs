@@ -27,8 +27,9 @@ namespace Testspada.Items
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.shootSpeed = 14f;
 			item.useAnimation = 16;
-			item.shoot = ProjectileID.RainbowRodBullet;
+			item.shoot = ModContent.ProjectileType<Projectiles.BookOfBuffsStar>()
 			item.value = Item.sellPrice(silver: 80);
+			Main.PlaySound(2, (int)p.position.X, (int)p.position.Y, 28);
 		}
 
 		public override void AddRecipes() {
