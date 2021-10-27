@@ -33,7 +33,6 @@ namespace Testspada.Items
 			item.useAnimation = 16;
 			item.shoot = ModContent.ProjectileType<Projectiles.BookOfBuffsStar>();
 			item.value = Item.sellPrice(silver: 80);
-			Main.PlaySound(2, (int)position.X, (int)position.Y, 28);
 		}
 
 		public override void AddRecipes() {
