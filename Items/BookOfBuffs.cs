@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using System;
-using terraria.audio;
+using Terraria.Audio;
 using Microsoft.Xna.Framework;
 
 namespace Testspada.Items
