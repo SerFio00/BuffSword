@@ -54,7 +54,7 @@ namespace Testspada.Projectiles
             }
         }
 
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public virtual void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
             target.AddBuff(BuffID.OnFire, 10);
             target.AddBuff(BuffID.Electrified, 10);
