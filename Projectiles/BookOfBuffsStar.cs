@@ -20,8 +20,8 @@ namespace Testspada.Projectiles
 
         public override void SetDefaults()
         {
-            projectile.width = 54;               //The width of projectile hitbox
-            projectile.height = 54;              //The height of projectile hitbox
+            projectile.width = 26;               //The width of projectile hitbox
+            projectile.height = 26;              //The height of projectile hitbox
             projectile.aiStyle = 9;             //The ai style of the projectile, please reference the source code of Terraria
             projectile.friendly = true;         //Can the projectile deal damage to enemies?
             projectile.hostile = false;         //Can the projectile deal damage to the player?
@@ -54,7 +54,7 @@ namespace Testspada.Projectiles
             }
         }
 
-        public virtual void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
 		{
             target.AddBuff(BuffID.OnFire, 10);
             target.AddBuff(BuffID.Electrified, 10);

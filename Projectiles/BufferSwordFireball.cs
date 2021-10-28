@@ -20,8 +20,8 @@ namespace Testspada.Projectiles
 
         public override void SetDefaults()
         {
-            projectile.width = 32;               //The width of projectile hitbox
-            projectile.height = 90;              //The height of projectile hitbox
+            projectile.width = 12;               //The width of projectile hitbox
+            projectile.height = 22;              //The height of projectile hitbox
             projectile.aiStyle = 1;             //The ai style of the projectile, please reference the source code of Terraria
             projectile.friendly = true;         //Can the projectile deal damage to enemies?
             projectile.hostile = false;         //Can the projectile deal damage to the player?
