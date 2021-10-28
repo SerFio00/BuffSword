@@ -18,7 +18,7 @@ namespace Testspada.Items
 		}
 
 		public override void SetDefaults() {
-			item.damage = 380;
+			item.damage = 280;
 			item.noMelee = true;
 			item.magic = true;
 			item.channel = true; //Channel so that you can hold the weapon [Important]
