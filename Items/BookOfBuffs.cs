@@ -43,5 +43,20 @@ namespace Testspada.Items
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
+		
+		public virtual void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+		{
+            target.AddBuff(BuffID.OnFire, 10);
+            target.AddBuff(BuffID.Electrified, 10);
+            target.AddBuff(BuffID.Venom, 10);
+            target.AddBuff(BuffID.CursedInferno, 10);
+            target.AddBuff(BuffID.Poisoned, 10);
+            target.AddBuff(BuffID.Confused, 10);
+            target.AddBuff(BuffID.Slow, 10);
+            target.AddBuff(BuffID.Ichor, 10);
+            target.AddBuff(BuffID.Midas, 10);
+            target.AddBuff(BuffID.Wet, 10);
+            target.AddBuff(BuffID.ShadowFlame, 10);
+		}
 	}
 }
