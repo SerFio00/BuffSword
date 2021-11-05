@@ -18,10 +18,10 @@ namespace Testspada.Buffs
         public override void Update(Player player, ref int buffIndex)
         {
             player.jumpBoost = true;
-            player.jumpSpeedBoost += 10;
+            player.jumpSpeedBoost += 20;
             player.autoJump = true;
             player.noFallDmg = true;
-            Player.jumpHeight = 10;
+            Player.jumpHeight = 20;
         }
     }
 }
