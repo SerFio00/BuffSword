@@ -24,7 +24,7 @@ namespace Testspada.Potion
             item.UseSound = SoundID.Item3;
             item.maxStack = 30;
             item.consumable = true;
-            item.rare = ItemRarityID.Rainbow;
+            item.rare = ItemRarityID.Purple;
             item.value = Item.buyPrice(gold: 10);
             item.buffType = ModContent.BuffType<SuperWrath>(); //Specify an existing buff to be applied when used.
             item.buffTime = 3600; //The amount of time the buff declared in item.buffType will last in ticks. 5400 / 60 is 90, so this buff will last 90 seconds.
