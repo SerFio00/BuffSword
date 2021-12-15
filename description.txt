@@ -15,6 +15,10 @@ enjoy my mod and Report in the homepage (via issue) for bug and problem with the
 
 THANKS A LOT FOR THE 10K DOWNLOAD
 
+v 0.9.1
+
+minor fixes and the pink star now applyes all the buffs properly
+
 v 0.9
 
 now all the buffs have their respective potion
