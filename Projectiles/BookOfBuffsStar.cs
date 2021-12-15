@@ -27,13 +27,13 @@ namespace Testspada.Projectiles
             projectile.hostile = false;         //Can the projectile deal damage to the player?
             projectile.ranged = false;           //Is the projectile shoot by a ranged weapon?
             projectile.penetrate = 5;           //How many monsters the projectile can penetrate. (OnTileCollide below also decrements penetrate for bounces as well)
-            projectile.timeLeft = 6000;          //The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
+            projectile.timeLeft = 6000;          //The live time for the projectile (60 = 1 second, so 600 is 600 seconds)
             projectile.alpha = 1;             //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in) Make sure to delete this if you aren't using an aiStyle that fades in. You'll wonder why your projectile is invisible.
             projectile.light = 3f;            //How much light emit around the projectile
             projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
             projectile.tileCollide = true;          //Can the projectile collide with tiles?
             projectile.extraUpdates = 1;            //Set to above 0 if you want the projectile to update multiple time in a frame
-            aiType = ProjectileID.RainbowRodBullet;           //Act exactly like default Bullet
+            aiType = ProjectileID.UnholyTridentFriendly;           //Act exactly like default Bullet
         }
 
         public override void Kill(int timeLeft)
@@ -54,19 +54,19 @@ namespace Testspada.Projectiles
             }
         }
 
-        public virtual void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
-		{
-            target.AddBuff(BuffID.OnFire, 10);
-            target.AddBuff(BuffID.Electrified, 10);
-            target.AddBuff(BuffID.Venom, 10);
-            target.AddBuff(BuffID.CursedInferno, 10);
-            target.AddBuff(BuffID.Poisoned, 10);
-            target.AddBuff(BuffID.Confused, 10);
-            target.AddBuff(BuffID.Slow, 10);
-            target.AddBuff(BuffID.Ichor, 10);
-            target.AddBuff(BuffID.Midas, 10);
-            target.AddBuff(BuffID.Wet, 10);
-            target.AddBuff(BuffID.ShadowFlame, 10);
-		}
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+            target.AddBuff(BuffID.OnFire, 600);
+            target.AddBuff(BuffID.Electrified, 600);
+            target.AddBuff(BuffID.Venom, 600);
+            target.AddBuff(BuffID.CursedInferno, 600);
+            target.AddBuff(BuffID.Poisoned, 600);
+            target.AddBuff(BuffID.Confused, 600);
+            target.AddBuff(BuffID.Slow, 600);
+            target.AddBuff(BuffID.Ichor, 600);
+            target.AddBuff(BuffID.Midas, 600);
+            target.AddBuff(BuffID.Wet, 600);
+            target.AddBuff(BuffID.ShadowFlame, 600);
+        }
     }
 }
