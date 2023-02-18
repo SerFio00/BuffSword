@@ -12,8 +12,6 @@ the mod will be continuously updated
 
 Added 3 more ranged Weapons and it is planned to add magic and summoner weapons
 
-### The tips are welcome!
-
 if you have any ideas, or if you see an error in the mod or directly in the code, you can create an "Issues", don't be shy!
 
 ## By SerFio00
